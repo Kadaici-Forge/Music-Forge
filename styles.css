@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'FutureTech';
+    src: url('Nautilus.otf') format('opentype');
+    /* Reemplaza 'ruta/a/' con la ruta real a tu archivo de fuente */
+    /* Puedes especificar más formatos de fuente si es necesario */
+}
+
+body {
+    background: url('fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); /* Tono oscuro con opacidad */
+    color: #fff; /* Color de texto blanco para resaltar sobre el fondo */
+    font-family: 'FutureTech', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de fuente para el texto */
+    padding: 20px; /* Agregamos un poco de espacio alrededor del contenido */
+}
+
+#page-title {
+    font-size: 36px; /* Tamaño de fuente para el título de la página */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 30px; /* Espacio inferior */
+    animation: pulse 2s infinite alternate; /* Animación pulsante */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+.music-player {
+    text-align: center;
+    margin-top: 50px; /* Espacio superior para separarlo del cuadro de abajo */
+}
+
+.playlist {
+    margin-top: 20px;
+    margin-bottom: 50px; /* Agregamos margen inferior para crear más espacio */
+    border: 2px solid #00ffff; /* Borde alrededor de la lista de reproducción */
+    padding: 10px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 50, 0.5); /* Color de fondo semi-transparente */
+}
+
+.playlist ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Mostrar las canciones en una columna */
+    align-items: center; /* Centrar las canciones horizontalmente */
+}
+
+.playlist ul li {
+    margin: 10px 0; /* Espacio entre las canciones */
+}
+
+.playlist ul li a {
+    text-decoration: none;
+    color: #ff00ff; /* Color de enlace magenta para resaltar sobre el fondo */
+    font-size: 20px; /* Tamaño de fuente para las canciones */
+}
+
+.playlist ul li a:hover {
+    color: #00ffff; /* Cambio de color al pasar el mouse para indicar interactividad */
+}
+
+/* Estilos para el reproductor de música */
+#audio-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio superior para separarlo del cuadro de abajo */
+    background-color: rgba(0, 0, 50, 0.5); /* Color de fondo semi-transparente */
+    padding: 10px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#audio-controls button {
+    background-color: rgba(0, 0, 50, 0.7); /* Color de fondo semi-transparente más oscuro para los botones */
+    color: #fff; /* Color de texto blanco para los botones */
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#audio-controls button:hover {
+    background-color: rgba(0, 0, 50, 0.9); /* Color de fondo semi-transparente aún más oscuro al pasar el mouse */
+}
+
+#song-title {
+    font-size: 28px; /* Tamaño de fuente más grande para el título de la canción */
+    margin-top: 20px; /* Espacio superior */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra de texto */
+    border: 2px solid #00ffff; /* Borde alrededor del título */
+    padding: 10px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 50, 0.5); /* Color de fondo semi-transparente */
+}
+
