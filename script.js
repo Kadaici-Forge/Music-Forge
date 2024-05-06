@@ -1,6 +1,6 @@
 function playMusic(songFileName, songName) {
     const musicPlayer = document.getElementById('music');
-    musicPlayer.src = 'Musica/' + songFileName;
+    musicPlayer.src = 'Música/' + songFileName;
     musicPlayer.play();
     
     // Actualizar la interfaz de usuario para mostrar el título de la canción
